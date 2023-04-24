@@ -1,0 +1,60 @@
+model_config:
+  num_classes: null
+train_config:
+  batch_size: 128
+  epochs: 5
+  optimizer_config:
+    name: adam
+    arguments:
+      betas:
+      - 0.5
+      - 0.9
+      weight_decay: 0.0
+      lr: 0.001
+  scheduler_config:
+    name: step
+    arguments:
+      step_size: 10
+      gamma: 0.9
+      step_when: epoch
+  dataset: /tmp/cat_dog
+  rand_weights_init: true
+experiment_dir: null
+random_seed: null
+keep_n_checkpoints: 3
+tensorboard: true
+amp: true
+device: cuda
+verbose: console
+eval_subsample: 1.0
+metrics_n_batches: 32
+metrics_mb_limit: 100
+early_stopping_iter: null
+eval_epoch: 1.0
+log_epoch: 1.0
+init_chkpt: null
+warm_up_epochs: 1.0
+divergence_factor: 100.0
+total_trials: 1000
+concurrent_trials: 10
+search_space:
+  train_config.optimizer_config.arguments.lr:
+    value_range:
+    - '0.0001'
+    - '0.1'
+    categorical_values: null
+    value_type: float
+  train_config.batch_size:
+    value_range:
+    - '32'
+    - '1024'
+    categorical_values: null
+    value_type: float
+optim_metrics:
+  val_loss: min
+gpu_mb_per_experiment: 1000
+cpus_per_experiment: 0.1
+search_algo: tpe
+ignore_invalid_params: false
+remote_config: null
+gcp_config: null

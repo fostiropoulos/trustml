@@ -1,0 +1,11 @@
+\begin{tabular}{lr}
+\toprule
+ & 0 \\
+\midrule
+resnet_mu & 90.203035 \\
+renet_std & 4.326982 \\
+inc_mu & 81.503868 \\
+inc_std & 20.074601 \\
+ds_resnet_bias & 1.477468 \\
+\bottomrule
+\end{tabular}
