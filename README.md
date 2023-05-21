@@ -1,5 +1,15 @@
-# Supplementary for `Trustworthy model evaluation on a budget`
+# Supplementary for `Trustworthy model evaluation on a budget` [[Paper](https://openreview.net/pdf?id=_JXT98mOmR)]
 
+Published at ICLR 2023 Workshop on Trustworthy and Reliable Large-Scale Machine Learning Models
+## Cite
+
+```bibtex
+@inproceedings{fostiropoulos2023trustworthy,
+  title={Trustworthy model evaluation on a budget},
+  author={Fostiropoulos, Iordanis and Brown, Bowman Noah and Itti, Laurent},
+  booktitle={ICLR 2023 Workshop on Trustworthy and Reliable Large-Scale Machine Learning Models}
+}
+```
 ## Requirments
 
 Instructions based on Ubuntu 18.04 with python 3.10+
