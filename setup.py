@@ -23,7 +23,7 @@ setup(
         "omegaconf==2.2.3",
         "optuna==3.1.1",
         "pandas==2.0.0",
-        "ray==2.1.0",
+        "ray>2.1.0",
         "scikit_learn==1.2.2",
         "scipy==1.10.1",
         "seaborn==0.12.2",
